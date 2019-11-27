@@ -13,7 +13,7 @@
         "preserveConstEnums": true,
         "sourceMap": true,
         "strictNullChecks": true,
-        "outDir": "",
+        "outDir": "dst",
         "lib": [
             "dom",
             "es2015"

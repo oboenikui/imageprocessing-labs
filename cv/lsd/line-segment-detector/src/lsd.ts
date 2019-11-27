@@ -30,7 +30,7 @@ export default class LSD {
     width = 0;
     height = 0;
     list: CoorList[] = [];
-    angles?: Float64Array;
+    angles: Float64Array = new Float64Array();
     modgrad?: Float64Array;
     used?: Uint8Array;
 
@@ -90,7 +90,7 @@ export default class LSD {
      *                   Returned lines are strictly oriented depending on the gradient.
      */
     lsd() {
-        if (!this.image || !this.angles) throw new Error('image and angles required'); // type guard
+        if (!this.image) throw new Error('image required'); // type guard
         /** @type {Vec4[]} */
         let lines = [];
         const prec = Math.PI * this.angTh / 180;
