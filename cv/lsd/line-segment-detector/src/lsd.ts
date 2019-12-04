@@ -30,7 +30,7 @@ export default class LSD {
     width = 0;
     height = 0;
     list: CoorList[] = [];
-    angles: Float64Array = new Float64Array();
+    angles: Float64Array = new Float64Array(0);
     modgrad?: Float64Array;
     used?: Uint8Array;
 
